@@ -1,0 +1,36 @@
+<html>
+<body>
+  <div id="app">
+    <h1>VueMart</h1>
+    
+    <h2>Shopping Cart</h2>
+    <ul>
+      <li>Apples: ${{ costOfApples }}</li>
+      <li>Bananas: ${{ costOfBananas }}</li>
+      <li>Coconut: ${{ costOfCoconuts }}</li>
+    </ul>
+    <p>Total: ${{ totalAmount }}</li>
+
+    <h2>Store Hours</h2>
+    <p>Sunday: 10:00 - 16:00</p>
+    <p>Monday to Friday: 09:00 - 17:00</p>
+    <p>Saturday: 09:30 - 18:00</p>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        costOfApples: 6,
+        costOfBananas: 2,
+        costOfCoconuts: 8,
+      },
+      computed: {
+        totalAmount() {
+          return this.costOfApples + this.costOfBananas + this.costOfCoconuts
+        }
+      }
+    });
+  </script>
+</body>
+</html>
