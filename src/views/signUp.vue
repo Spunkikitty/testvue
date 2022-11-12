@@ -1,20 +1,16 @@
 
 <template>
   <div id="app">
-    <h1>Welcome to Groupmania</h1>
+    <h1>Welcome to {{company}}</h1>
 
     <div :style="{ 'background-image': 'url(./assets/images/icon-above-front.png)' }">
     </div>
   </div>
   <form class="form-1" @submit.prevent="onSubmit">
 
-    //put 
-    <ul>
-      <li>FirstName {{ FirstName }}</li>
-      <li>LastName {{ LastName }}</li>
-      <li>Email {{ Email }}</li>
-      <li>Password {{ Password }}</li>
-    </ul>
+    <input type="text" placeholder="name"> Name
+    <input type="text" placeholder="email"> Email
+    <input type="text" placeholder="password"> Password
 
     <button @click="(event) => warn('Use Company Email Only.', event)"> Submit </button>
   </form>
@@ -26,9 +22,11 @@ export default {
   name: "GroupmaniaView",
   data() {
     return {
-      name: "",
-      email: "",
-      password: ""
+      name: " ",
+      email: " ",
+      password: " ", 
+      Groupmania: "{{Company}}"
+
     }
   }
 }
