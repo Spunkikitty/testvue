@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-    name: "Groupmania",
+    name: "loginPage",
     data() {
         return {
             email: " ",
@@ -17,7 +17,10 @@ export default {
         }
     }
 };
-
+// TODO add event listener for submit button 
+// use fetch API to post login request 
+// store user ID and token in local storage 
+// redirect user to postPage
 </script>
 <style>
 
