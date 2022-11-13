@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <h1>Welcome to {{ company }}</h1>
+    <h1>Welcome to {{ company }} </h1>
 
     <div class ="image-1">
     </div>

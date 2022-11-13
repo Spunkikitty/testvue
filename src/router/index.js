@@ -3,10 +3,16 @@ import login from "../views/loginPage.vue";
 import signUp from "../views/signupPage.vue";
 import profile from "../views/profilePage.vue";
 import post from "../views/postPage.vue";
+import home from "../views/homePage.vue";
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
+    {
+      path: "/home", 
+      name: "home",
+      component: home,
+    },
     {
       path: "/signup",
       name: "signup",
@@ -17,7 +23,10 @@ const router = createRouter({
       name: "login",
       component: login,
     },
-    { path: "/post", name: "post", component: post },
+    { path: "/post", 
+    name: "post", 
+    component: post 
+  },
     {
       path: "/profile",
       name: "profile",
