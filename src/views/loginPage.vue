@@ -19,12 +19,16 @@ export default {
         }
     }
 };
+
+fetch()
+
 // TODO add event listener for login button 
 // use fetch API to post login request 
 // store user ID and token in local storage 
 // redirect user to postPage
 </script>
 <style scoped>
+
 .wrapper { 
  border: black 5pt bold; 
  background-color: aqua;
