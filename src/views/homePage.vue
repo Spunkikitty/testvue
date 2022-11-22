@@ -4,11 +4,15 @@
 
   <h1 class="sum-1"> {{ message }}</h1>
 
-
-  <a button name="login" type="button" class="login-1" href="loginPage.vue">Login</a><br />
-
-
-  <a button name="signup" type="button" class="signup-1" href="signupPage.vue">Signup</a>
+  <div class = "navLinks">
+ <section>
+  <a button name="login" type="button" class="login-1" href="login">Login</a><br />
+ </section>
+ 
+  <section>
+  <a button name="signup" type="button" class="signup-1" href="signup">Signup</a>
+  </section>
+  </div>
 
 </template>
 
@@ -32,7 +36,7 @@ export default {
 <style>
 body {
   background-image: url('../assets/images/icon-left-font-monochrome-black.png');
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
 
   /* background: #ffd7d7; /*  fallback for old browsers  */
   /* background: -webkit-linear-gradient(to left, #ffd7d7, #fd2d21); Chrome 10-25, Safari 5.1-6  */
@@ -42,7 +46,7 @@ body {
 
 
 
-.login-1 {
+/* .login-1 {
   border: black 10pt bold;
   width: 50pt;
   height: 50pt;
@@ -59,5 +63,5 @@ body {
   background-color: violet;
   text-align: center;
   border-radius: 30%;
-}
+} */
 </style>

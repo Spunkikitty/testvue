@@ -1,35 +1,53 @@
 
+
+ 
 <template>
   <div id="app">
     <h1>Welcome to {{ company }} </h1>
 
-    <div class ="image-1">
+    <h2 id="container"> Registration Page</h2>
+
+    <div class="image-1">
+      <div class=" Register">
+
+
+        <form class="form-1" @submit.prevent="onSubmit">
+          <!-- TODO indicate signup page, add styling -->
+          Name: <input type="text" :label-for="nameSet" placeholder="name"><br />
+          Email: <input type="text" :label-for="emailSet" placeholder="@groupmania.com"><br />
+          Password: <input type="password" :label-for="passwordSet" placeholder="password"><br />
+
+          <button class="regUp" @click="(event) => say('Thank You', event)"> Submit </button>
+        </form>
+
+      </div>
     </div>
   </div>
-  <form class="form-1" @submit.prevent="onSubmit">
-<!-- TODO indicate signup page, add styling -->
-    Name: <input type="text" placeholder="name"><br />
-    Email: <input type="text" placeholder="email"><br />
-    Password: <input type="password" placeholder="password"><br />
-
-    <button @click="(event) => warn('Use Company Email Only.', event)"> Submit </button>
-  </form>
-
 </template>
 
 <script>
+
+
+
+
 export default {
   name: "signupPage",
   data() {
     return {
       name: " ",
-      email: " ",
+      email: "",
       password: " ",
       Groupmania: "{{company}}"
 
     }
   }
-}
+};
+
+
+
+
+
+
 
 
 // TODO this.$router.push("/login");
