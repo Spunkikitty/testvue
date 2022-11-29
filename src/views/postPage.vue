@@ -1,7 +1,7 @@
 
 
 <template>
-    <div class= "container-1|">
+    <div class= "container-1">
         <div class= "container-2">
             <h3>Hi {{ Name }} </h3>
         </div>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: "postPage",
+    name: "PostPage",
     data() {
         return {
             email: "",

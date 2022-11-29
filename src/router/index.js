@@ -9,7 +9,7 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
     {
-      path: "/home", 
+      path: "/", 
       name: "home",
       component: home,
     },

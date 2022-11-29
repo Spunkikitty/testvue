@@ -1,3 +1,11 @@
+
+
+<!--  -->
+
+<template>
+  <button class="login-1" />
+</template>
+
 <script>
 import { profile } from 'console'
 
@@ -42,8 +50,5 @@ const app = new Vue({
 
 </script>
 
-<template>
-  <button class="login-1" />
-</template>
 
-e
+
