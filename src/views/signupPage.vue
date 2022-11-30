@@ -24,9 +24,7 @@
           /><br />
 
           <!-- TODO: finish click event handler for submitting signup -->
-          <button class="regUp" @click="(event) => say('Thank You', event)">
-            Submit
-          </button>
+          <button class="regUp" @submit.prevent="(click) => say('Success!',click)">Submit</button>
         </form>
       </div>
     </div>
@@ -44,7 +42,8 @@ export default {
   name: "signupPage",
   data() {
     return {
-      name: " ",
+      firstName: "",
+      lastName: "",
       email: "",
       password: " ",
       Groupmania: "{{company}}",
@@ -54,20 +53,24 @@ export default {
     submitForm() {
       // this.$emit('submit', { email, password })
       console.log(this.name, this.email);
+      //this.$router.push("/login");
     },
-  },
-};
+    methods: {
+      postsignup() {
+        fetch("http://localhost:3000/signup");
+        user
+      .save()
+      .then(() => {
+        res.status(201).json({
+          message: "User added successfully!",
+        });
+      })
+      .catch((error) => {
+        res.status(500).json({
+          error: error,
+        });
+      }
+  
+  
 
-// TODO this.$router.push("/login");
-</script>
-
-<style>
-/* TODO: style signup page think chapter 2, button keep color palette of company  written down from logo */
-.background-image {
-  background-image: center;
-}
-
-.form-1 {
-  background-color: #ffd7d7;
-}
-</style>
+</script>    

@@ -1,28 +1,19 @@
-<!-- only show user name and email  -->
+<!-- only show user name and email 
 
 <template>
-
-  <h1>Hello,{{ firstname }}</h1>
-  <h2>{{ employeeid }}</h2>
+  <h1>Hello,{{ Name }}</h1>
+  <h2>{{ email }}</h2>
   <nav>
+    
+    <button class="leaveAccount" @click="">Logout</button>
+    <button class = "deleteMe" @click="delete"> Delete Account</button> 
+  </nav> -->
+  
 
-    <button class="leave" @click="Logout"> Logout</button>
-    <!-- <button class = "deleteMe" @click="delete"> Delete Account</button>  -->
-  </nav>
-</template>
+<!-- //let leaveBio = button => localStorage.removeItem('email', 'password','userId'); -->
+<!-- //button.classlist.$event("leave") -->
+<!-- //let delete = button => button.classlist.$event("delete") -->
 
-<script>
-
-// export default{
-//     Profile:
-//     data(){
+<!-- </script> -->
 
 
-//     }
-// }
-
-//let leaveBio = button => localStorage.removeItem('email', 'password','userId');
-//button.classlist.$event("leave")
-//let delete = button => button.classlist.$event("delete")
-//
-</script>
